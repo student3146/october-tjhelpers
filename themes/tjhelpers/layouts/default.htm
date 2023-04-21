@@ -1,0 +1,33 @@
+description = "Default Layout"
+==
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>{{ this.page.title }}</title>
+    <link rel="stylesheet" href="{{ 'assets/css/vendor.css'|theme }}">
+    <link rel="stylesheet" href="{{ 'assets/css/main.css'|theme }}">
+    </head>
+
+<body class="page__body">
+  <div class="site-container">
+    {% partial 'site/header' %}
+
+    <main class="main">
+    {% page %}
+    </main>
+
+    {% partial 'site/footer' %}
+
+  </div>
+  <script src="{{ 'assets/js/main.js'|theme }}"></script>
+    {% framework extras %}
+    {% scripts %}
+    </body>
+
+</html>

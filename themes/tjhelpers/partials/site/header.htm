@@ -1,0 +1,40 @@
+<header class="header">
+    <div class="container header__container">
+        <div class="header__logo">
+            <img src="{{ 'assets/img/logo.png'|theme }}" alt="logo">
+        </div>
+        <nav class="nav header__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="{{ url('/') }}" class="main-link nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="{{ url('/courses') }}" class="main-link nav__link">Courses</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="main-link nav__link">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a href="/" class="main-link nav__link">Contact</a>
+            </li>
+          </ul>
+          <ul class="menu--active" data-menu>
+            <li class="nav__item">
+              <a href="{{ url('/') }}" class="main-link nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="{{ url('/courses') }}" class="main-link nav__link">Courses</a>
+            </li>
+            <li class="nav__item">
+              <a href="/" class="main-link nav__link">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a href="/" class="main-link nav__link">Contact</a>
+            </li>
+          </ul>
+          <button class="burger" aria-label="Открыть меню" aria-expanded="false"  data-burger>
+            <span class="burger__line"></span>
+          </button>
+        </nav>
+    </div>
+  </header>
